@@ -1,6 +1,8 @@
 /*Versione aciclica 
 
-
+let num1 = prompt("Inserisci il primo numero");
+let num2 = prompt("Inserisci il secondo numero");
+let num2;
 
 if (num1 == num2)
     console.log("I due numeri sono uguali");
@@ -19,12 +21,12 @@ Il software stampa il maggiore. */
 
 let num1;
 let num2;
-let flag = true;
-while(flag)
+let flag = false;
+while(flag==false)
 {
     num1 = prompt("Inserisci il primo numero");
     num2 = prompt("Inserisci il secondo numero");
-    flag = false;
+    flag = confirm("Premi OK per stampare il risultato, oppure ANNULLA per ripetere l'inserimento");
 }
 
 if (num1 == num2)
@@ -33,7 +35,3 @@ else if(num1>num2)
     console.log(num1);
 else
     console.log(num2);
-
-
-
-
